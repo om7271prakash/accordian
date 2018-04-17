@@ -1,0 +1,49 @@
+body {
+  background-color: #fff;
+}
+
+#accordianContainer {
+  padding-bottom: 4em;
+}
+#accordianContainer h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#accordianContainer h3:not(:first-child) {
+  margin-top: 3em;
+}
+#accordianContainer h3.farming {
+  color: #ef4631;
+}
+#accordianContainer h3.processing {
+  color: #f88d00;
+}
+#accordianContainer h3.distribution {
+  color: #feb422;
+}
+#accordianContainer .accordion .accordion-navigation {
+  position: relative;
+}
+#accordianContainer .accordion .accordion-navigation a {
+  background-color: inherit;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: white solid 1px;
+  border-bottom: rgba(255, 255, 255, 0.35) solid 1px;
+}
+#accordianContainer .accordion .accordion-navigation .content {
+  background-color: inherit;
+  color: #000;
+}
+#accordianContainer .accordion .accordion-navigation:after {
+  color: #000;
+  position: absolute;
+  font-family: FontAwesome;
+  top: 15px;
+  right: 15px;
+  content: "\f105";
+}
+#accordianContainer .accordion .accordion-navigation.active:after {
+  content: "\f107";
+}
